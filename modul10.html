@@ -17,7 +17,8 @@
             <header class="header">
             <nav class="nav">
             <h1  class="logo">
-                <img srcset="./img/MoGo@1X.png 86w, ./img/@2/MoGo@2X.png 172w"
+                <img class="nav__logo-img" 
+                srcset="./img/MoGo@1X.png 86w, ./img/@2/MoGo@2X.png 172w"
                 sizes="86px"
                 src="./img/MoGo@1X.png" alt=""
                 height="23">
@@ -25,19 +26,33 @@
                 
             </h1>
             <ul class="menu">
-                <li class="menu-item"><a href="#">About</a></li>
-                <li><a href="#">service</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">blog</a></li>
-                <li><a href="#">contact</a></li>
-                <li><img src="./img/SHOPPING CART@1X.png" alt="  "></li>
-                <li><img src="./img/MAGNIFYING GLASS@1X.png" alt=""></li>
+                <li class="nav__menu-item">
+                    <a href="#">About</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a  href="#">service</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#">work</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#">blog</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a href="#">contact</a>
+                </li>
+                <li class="nav__menu-item">
+                    <img src="./img/SHOPPING CART@1X.png" alt="  ">
+                </li>
+                <li class="nav__menu-item">
+                    <img src="./img/MAGNIFYING GLASS@1X.png" alt="">
+                </li>
                 
             </ul>
             <p class="template">Creative Template</p>
             <p class="MoGo-centr">Welcome</p>
             <p class="MoGo-centr1">to MoGo</p>
-            <button class="button">
+            <button class="nav__button-img">
                 <img src="./img/booton/crop@1X.png" alt="">
             </button>
           </nav>
@@ -56,23 +71,23 @@
                         <h4 class="title_low">Photography</h4>
                         <p class="text_servis">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </li>
-                    <li class="line_graph">
+                    <li class="link line_graph">
                         <h4 class="title_low">Web Design</h4>
                         <p class="text_servis">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </li>
-                    <li class="computer">
+                    <li class="link computer">
                         <h4 class="title_low">Creativity</h4>
                         <p class="text_servis">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </li>
-                    <li class="book">
+                    <li class="link book">
                         <h4 class="title_low">seo</h4>
                         <p class="text_servis">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                     </li>
-                    <li class="home">
+                    <li class="link home">
                         <h4 class="title_low">Css/Html</h4>
                         <p class="text_servis">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
                     </li>
-                    <li class="image">
+                    <li class="link image">
                         <h4 class="title_low">digital</h4>
                         <p class="text_servis">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </li>
@@ -97,10 +112,34 @@
                         <div class="magic"></div>
                         <div class="box_item">
                                 <ul class="list_item">
-                                    <li class="icon"><button class="facebook" ></button></li>
-                                    <li class="icon"><button class="twitter"></button></li>
-                                    <li class="icon"><button class="pinterest"></button></li>
-                                    <li class="icon"><button class="instagram"></button></li>
+                                    <li class="icon">
+                                        <a href="#">
+                                        <svg>
+                                            <use href="img/sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                    <li class="#">
+                                        <a class="sociale" href="twitter">
+                                          <svg>
+                                             <use href="img/sprite.svg#icon-twitter"></use>
+                                          </svg>
+                                        </a>
+                                    </li>
+                                    <li class="#">
+                                        <a class="sociale" href="pinterest">
+                                            <svg>
+                                                <use href="img/sprite.svg#icon-pinterest"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="#">
+                                        <a class="sociale" href="instagram">
+                                            <svg>
+                                                <use href="img/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>         
                         </div>
@@ -120,11 +159,35 @@
                                     <div class="magic"></div>
                                     <div class="box_item">
                                             <ul class="list_item">
-         <li class="icon"><a href="https://uk-ua.facebook.com/" target="_blank"><button class="facebook"></button></a></li>
-                                                <li class="icon"><a href="https://twitter.com/?lang=ru" target="_blank"> <button class="twitter"></button></a></li>
-                                                <li class="icon"><a href="https://www.pinterest.com/" target="_blank"> <button class="pinterest"></button></a></li>
-                                                <li class="icon"><a href="https://www.instagram.com/?hl=ru" target="_blank"> <button class="instagram"></button></a></li>
-                                            </ul>
+                                                    <li class="icon">
+                                                        <a href="#">
+                                                        <svg>
+                                                            <use href="img/sprite.svg#icon-facebook"></use>
+                                                        </svg>
+                                                      </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="twitter">
+                                                          <svg>
+                                                             <use href="img/sprite.svg#icon-twitter"></use>
+                                                          </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="pinterest">
+                                                            <svg>
+                                                                <use href="img/sprite.svg#icon-pinterest"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="instagram">
+                                                            <svg>
+                                                                <use href="img/sprite.svg#icon-instagram"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                         </div>         
                                     </div>
                         <h4 class="title_low centre_card">Christopher Campbell</h4>
@@ -142,11 +205,35 @@
                                     <div class="magic"></div>
                                     <div class="box_item">
                                             <ul class="list_item">
-                                                <li class="icon"><a href="https://facebook.com/" target="_blank"><button class="facebook"></button></a></li>
-                                                <li class="icon"><a href="https://twitter.com/?lang=ru" target="_blank"> <button class="twitter"></button></a></li>
-                                                <li class="icon"><a href="https://www.pinterest.com/" target="_blank"> <button class="pinterest"></button></a></li>
-                                                <li class="icon"><a href="https://www.instagram.com/?hl=ru" target="_blank"> <button class="instagram"></button></a></li>
-                                            </ul>
+                                                    <li class="icon">
+                                                        <a href="#">
+                                                        <svg>
+                                                            <use href="img/sprite.svg#icon-facebook"></use>
+                                                        </svg>
+                                                      </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="twitter">
+                                                          <svg>
+                                                             <use href="img/sprite.svg#icon-twitter"></use>
+                                                          </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="pinterest">
+                                                            <svg>
+                                                                <use href="img/sprite.svg#icon-pinterest"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                    <li class="#">
+                                                        <a href="instagram">
+                                                            <svg>
+                                                                <use href="img/sprite.svg#icon-instagram"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                         </div>         
                                     </div>
                         <h4 class="title_low centre_card">Michael Fertig </h4>

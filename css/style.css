@@ -11,6 +11,7 @@
 }
 .background-image{
   position: relative;
+  /* background-repeat: no-repeat; */
   width: 100%;
   height: 1000px;
   background-image: url(../img/backgr\ Layer\ 15@1X.png);
@@ -55,7 +56,7 @@
 }
 
 .header {
-  /* width: 100%; */
+  width: 100%;
   height: 1001px;
   display: flex;
   align-items: center;
@@ -64,10 +65,10 @@
   
 }
 .nav{
+ margin: 0 auto; 
   width: 1920px;
 }
 .logo {
-  margin-top: 40px;
   float: left;
   margin-left: 150px;
   display: inline-block;
@@ -84,14 +85,13 @@
 }
 
 .menu {
+  margin: 0 auto;
   display: flex;
   list-style-type: none;
   min-width: 490px;
   justify-content: space-between;
   position: relative;
   float: right;
-  margin-top: 40px;
-  margin-right: 150px;
   
  }
 .menu a {
@@ -108,9 +108,9 @@
   
 }
 
-.button {
+.nav__button-img {
   margin-left: 880px;
-  /* padding: 0px; */
+  padding: 0px;
   border: #FFF;
   margin-top: 124px;
   width: 160px;
@@ -123,7 +123,7 @@
  
 }
 
-.button_text{
+.nav__button-img{
   color: #FFF;
   opacity: 1;
 }
@@ -131,10 +131,10 @@
 .icon {
   color: #FFF;
 }
-.menu-item a{
+.nav__menu-item{
   color: #f1f1f1;
 }
-.menu a:hover {
+.nav__menu-item a:hover {
   color: #fce38a;
   transition-duration: 200ms;
   transition-timing-function: linear; 
@@ -154,6 +154,8 @@
 }
 
 .servis_container {
+  margin: 0 auto;
+  width: 1200px;
  padding-top: 200px;
  
 }
@@ -249,30 +251,30 @@
   background-size: contain;
       
 }
-.line_graph {
-  background-image: url(../img/LINE\ GRAPH@1X.png);
+
+.link{
   background-repeat: no-repeat;
   background-size: contain;
+}
+.line_graph {
+  background-image: url(../img/LINE\ GRAPH@1X.png);
+  
 }
 .computer {
   background-image: url(../img/COMPUTER\ _\ OK@1X.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  
 }
 .book {
   background-image: url(../img/BOOK\ 2@1X.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  
 }
 .home {
   background-image: url(../img/HOME@1X.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+ 
 }
 .image {
   background-image: url(../img/IMAGE@1X.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  
 }
 .servis_list li:nth-child(-n+3) {
   margin-bottom: 100px;
@@ -331,45 +333,61 @@
 }
 .list_item {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   list-style: none;
 }
 .list_item button{
   border: none;
+
 }
-.facebook {
-  background-image: url(../img/facebook@1X.png);
+.list_item a:hover svg {
+  fill: #ffffff;
+}
+
+.list_item svg {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  fill: #f38181;
+  transform: fill 0.2s linear;
+  margin-left: 2px;
+}
+
+.soсiale {
   background-color: #fce38a;
   width: 55px;
   height: 55px;
-  background-repeat: no-repeat;
-  background-position: center;
+}
+/* .facebook {
+ 
+  background-color: #fce38a;
+  width: 55px;
+  height: 55px;
+  
 }
 .twitter {
-  background-image: url(../img/twitter@1X.png);
+  
   background-color: #fce38a;
   width: 55px;
   height: 55px;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }         
 .pinterest {
-  background-image: url(../img/pinterest@1X.png);
+  
   background-color: #fce38a;
   width: 55px;
   height: 55px;
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }         
 .instagram {
-  background-image: url(../img/instagram@1X.png);
+  
   background-color: #fce38a;
   width: 55px;
   height: 55px;
-  background-repeat: no-repeat;
-  background-position: center;    
-}
-.facebook:hover {
+   
+} */
+/* .facebook:hover {
   background-color: #95e1d3;
   transition-duration: 200ms;
   transition-timing-function: linear;
@@ -388,7 +406,7 @@
   background-color: #95e1d3;
   transition-duration: 200ms;
   transition-timing-function: linear;
-}                  
+}                   */
 .magic {
   opacity: 0;  
   position: absolute;
@@ -466,7 +484,7 @@
  @media (min-resolution: 192dpi), (min-resolution: 2dppx){
 
   .alarm {
-    background-image: url(../img/icon\ Amazing\ Services/.alarm@2X.png);
+    background-image: url(../img/icon\ Amazing\ Services/.alarm@2.png);
    }
   .line_graph {
     background-image: url(../img/LINE\ GRAPH@2X.png);

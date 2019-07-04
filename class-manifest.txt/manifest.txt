@@ -1,0 +1,26 @@
+container
+
+background-image
+
+background-fons
+
+header
+
+nav
+
+nav__logo-img
+    nav__menu-item
+    nav__menu-site-navigation
+    nav__menu-template
+    nav__menu-MoGo-centr
+    nav__menu-MoGo-centr1
+    nav__button-img
+
+
+servis_container
+    servis_container__title_centre-KaushanScript
+    servis_container__title_centre-head_titl
+
+servis_list
+       servis_list__alarm-     
+
